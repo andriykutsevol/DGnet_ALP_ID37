@@ -23,8 +23,8 @@ pkgver() {
 
 
 package() {
-  # mkdir -p $pkgdir/home/dgnet/dgnet_programs/PID37
-  # mkdir -p $pkgdir/home/dgnet/dgnet_settings/PID37
+  mkdir -p $pkgdir/home/dgnet/dgnet_programs/PID37
+  mkdir -p $pkgdir/home/dgnet/dgnet_settings/PID37
   # cd $pkgdir/home/dgnet/dgnet_programs/PID37
   # python3 -m venv ./venv
   # source ./venv/bin/activate
