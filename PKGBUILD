@@ -6,7 +6,7 @@ arch=('any')
 url="https://github.com/DamianoGlobal/DGnet_Program_ID37"
 license=('')
 
-source=($pkgname::git+ssh://git@github.com:DamianoGlobal/DGnet_Dist_PID4.git)
+source=($pkgname-$pkgver::git+ssh://git@github.com/DamianoGlobal/DGnet_Program_ID37.git)
 
 md5sums=('SKIP')
 
@@ -15,11 +15,10 @@ prepare() {
   #git clone https://github.com/DamianoGlobal/DGnet_Dist_PID4
 }
 
-
-pkgver() {
-        cd "$srcdir/${pkgname}"
-        printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-}
+# pkgver() {
+#         cd "$srcdir/${pkgname}"
+#         printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+# }
 
 
 package() {
