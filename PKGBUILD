@@ -1,18 +1,19 @@
 pkgname=PID37
-pkgver=r8.601f58b
+pkgver=1
 pkgrel=1
 pkgdesc="Walmart Kivy MD Interface for PRD4"
 arch=('any')
 url="https://github.com/DamianoGlobal/DGnet_Program_ID37"
 license=('')
 
-source=($pkgname-$pkgver::git+ssh://git@github.com/DamianoGlobal/DGnet_Program_ID37.git)
+source=($pkgname::git+ssh://git@github.com/DamianoGlobal/DGnet_Program_ID37.git)
 
 md5sums=('SKIP')
 
 prepare() {
-  cd $pkgname
-  #git clone https://github.com/DamianoGlobal/DGnet_Dist_PID4
+  echo "zzzzzzz"
+  echo `pwd`
+  #git clone git@github.com:DamianoGlobal/DGnet_Dist_PID4.git
 }
 
 # pkgver() {
