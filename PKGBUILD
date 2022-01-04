@@ -6,13 +6,13 @@ arch=('any')
 url="https://github.com/DamianoGlobal/DGnet_Program_ID37"
 license=('')
 
-source=("$pkgname::git+https://github.com/DamianoGlobal/DGnet_Program_ID37")
+source=("$pkgname::git+ssh://git@github.com:DamianoGlobal/DGnet_Dist_PID4.git")
 
 md5sums=('SKIP')
 
 prepare() {
   cd $pkgname
-  git clone https://github.com/DamianoGlobal/DGnet_Dist_PID4
+  #git clone https://github.com/DamianoGlobal/DGnet_Dist_PID4
 }
 
 
